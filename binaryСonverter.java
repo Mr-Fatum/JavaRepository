@@ -1,7 +1,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class invertor {
+public class binaryСonverter {
     private static byte b1;
     private static short sh1;
     private static int i1;
