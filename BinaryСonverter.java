@@ -48,6 +48,31 @@ public class BinaryСonverter {
             default:
                 System.out.println("Ошибка, перезапустите программу и введите одно из указанных чисел");
                 break;
+            try {
+                byteInput = scanner.nextByte();
+            } catch (Exception egnored) {
+            }
+            try {
+                shortInput = scanner.nextShort();
+            } catch (Exception egnored) {
+            }
+            try {
+                integerInput = scanner.nextInt();
+            } catch (Exception egnored) {
+            }
+            try {
+                longInput = scanner.nextLong();
+            } catch (Exception egnored) {
+            }
+            try {
+                floatInput = scanner.nextFloat();
+            } catch (Exception egnored) {
+            }
+            try {
+                doubleInput = scanner.nextDouble();
+            } catch (Exception egnored) {
+            }
+            
         }
         switch (a) {
             case 1:
@@ -76,8 +101,7 @@ public class BinaryСonverter {
                 System.out.println(s6);
                 break;
             default:
-                
-
+                System.out.println("Ошибка, перезапустите код и введите число в выбранном типе данных");
                 break;
         }
     }
