@@ -49,17 +49,17 @@ public class BinaryСonverter {
             default:
                 System.out.println("Ошибка, перезапустите программу и введите одно из указанных чисел");
                 break;
-            try {
+        }
+        try {
                 byteInput = scanner.nextByte();
                 shortInput = scanner.nextShort();
                 integerInput = scanner.nextInt();
                 longInput = scanner.nextLong();
                 floatInput = scanner.nextFloat();
                 doubleInput = scanner.nextDouble();
-            } catch (InputMismatchExeption IME) {
+            } catch (InputMismatchException IME) {
                 System.out.println(IME.getMessage() + "Something went wrong");
-            }
-        }
+            }   
         switch (a) {
             case 1:
                 String byteString = String.format(Integer.toBinaryString(byteInput & 0xFF));
