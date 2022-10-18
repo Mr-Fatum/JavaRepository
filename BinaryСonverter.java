@@ -51,15 +51,15 @@ public class BinaryСonverter {
                 break;
         }
         try {
-                byteInput = scanner.nextByte();
-                shortInput = scanner.nextShort();
-                integerInput = scanner.nextInt();
-                longInput = scanner.nextLong();
-                floatInput = scanner.nextFloat();
-                doubleInput = scanner.nextDouble();
-            } catch (InputMismatchException IME) {
-                System.out.println(IME.getMessage() + "Something went wrong");
-            }   
+            byteInput = scanner.nextByte();
+            shortInput = scanner.nextShort();
+            integerInput = scanner.nextInt();
+            longInput = scanner.nextLong();
+            floatInput = scanner.nextFloat();
+            doubleInput = scanner.nextDouble();
+        } catch (InputMismatchException IME) {
+            System.out.println(IME.getMessage() + "Something went wrong");
+        }   
         switch (a) {
             case 1:
                 String byteString = String.format(Integer.toBinaryString(byteInput & 0xFF));
